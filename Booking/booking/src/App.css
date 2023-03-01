@@ -8,3 +8,29 @@
     --primary-color:#755139FF;
     --secondary-color:#D4B996FF;
 }
+body{
+  background-color: var(--primary-color);
+}
+html{
+  font-size: 75.5%;
+}
+.header{
+  width: 100%;
+  height: 500px;
+  color: var(--secondary-color);
+  box-shadow: 0 5px 10px var(--secondary-color);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./assets/light-on-book_shutterstock_149736146.jpg');
+  clip-path: circle(60% at left 300px);
+  z-index: -1;
+}
