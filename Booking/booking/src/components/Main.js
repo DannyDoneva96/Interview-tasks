@@ -20,6 +20,7 @@ const Header = () => {
         <img src={require('./assets/istockphoto-1140770270-612x612-removebg-preview.png')} alt="" />
       </div>
     </div>
+    <div className="container"></div>
   </>
   )
 }
