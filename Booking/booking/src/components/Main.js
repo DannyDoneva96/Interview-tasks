@@ -1,4 +1,6 @@
 import React from 'react'
+import Card from './Card'
+import axios from 'axios'
 
 const Header = () => {
   return (<>
@@ -17,10 +19,12 @@ const Header = () => {
           <input type="text" name='search-input' className="search-input" placeholder="Enter your Book" />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <img src={require('./assets/istockphoto-1140770270-612x612-removebg-preview.png')} alt="" />
+        <img src={require('../assets/istockphoto-1140770270-612x612-removebg-preview.png')} alt="" />
       </div>
     </div>
-    <div className="container"></div>
+    <div className="container">
+      <Card/>
+    </div>
   </>
   )
 }
