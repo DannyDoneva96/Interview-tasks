@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({book}) => {
   return (
     <div className="card">
       <img src='this will be url' alt="" />
